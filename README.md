@@ -4,6 +4,46 @@ Welcome to the repository of my first **AI Agent**! This project is a significan
 
 ---
 
+
+## 🛠️ How to Set Up and Run This Project
+
+1. **Set up a virtual environment:**
+    ```bash
+    python -m venv env
+    source env/bin/activate  # On Windows: env\Scripts\activate
+    ```
+
+2. **Install AgentStack and initialize the project:**
+    ```bash
+    pip install agentstack
+    agentstack init agent_web_scrap
+    ```
+
+3. **Install dependencies:**
+    ```bash
+    pip install crewai
+    pip install firecrawl
+    pip install crewai_tools
+    ```
+
+4. **Configure your agents and tasks:**
+    ```bash
+    agentstack generate agent summarizar
+    agentstack generate task summarizar_task
+    agentstack tools add firecrawl
+    ```
+
+5. **Run the project:**
+    ```bash
+    agentstack run
+    ```
+
+### Additional Notes:
+- Ensure you configure your tasks in `tasks.yaml` as per your project requirements.
+- Once the project is running, provide a URL for web scraping or crawling, and enjoy the results!
+
+
+---
 ## 🤔 What is an AI Agent?
 
 An AI Agent is an intelligent system capable of autonomously performing tasks, making decisions, and interacting with users or systems to solve specific problems. It's like having a virtual assistant that goes beyond simple automation by learning, adapting, and executing intelligently.
@@ -76,47 +116,4 @@ If you’re interested in this project, have suggestions, or want to collaborate
 
 ---
 
-# 🛠️ How to Run This Project
 
-1. Clone the repository:  
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
-
-
-## 🛠️ How to Set Up and Run This Project
-
-1. **Set up a virtual environment:**
-    ```bash
-    python -m venv env
-    source env/bin/activate  # On Windows: env\Scripts\activate
-    ```
-
-2. **Install AgentStack and initialize the project:**
-    ```bash
-    pip install agentstack
-    agentstack init agent_web_scrap
-    ```
-
-3. **Install dependencies:**
-    ```bash
-    pip install crewai
-    pip install firecrawl
-    pip install crewai_tools
-    ```
-
-4. **Configure your agents and tasks:**
-    ```bash
-    agentstack generate agent summarizar
-    agentstack generate task summarizar_task
-    agentstack tools add firecrawl
-    ```
-
-5. **Run the project:**
-    ```bash
-    agentstack run
-    ```
-
-### Additional Notes:
-- Ensure you configure your tasks in `tasks.yaml` as per your project requirements.
-- Once the project is running, provide a URL for web scraping or crawling, and enjoy the results!
