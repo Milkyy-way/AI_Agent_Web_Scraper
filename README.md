@@ -39,6 +39,7 @@ Welcome to the repository of my first **AI Agent**! This project is a significan
     ```
 
 ### Additional Notes:
+- Rename the .env.example to .env and Add the API keys
 - Ensure you configure your tasks in `tasks.yaml` as per your project requirements.
 - Once the project is running, provide a URL for web scraping or crawling, and enjoy the results!
 
