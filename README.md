@@ -86,13 +86,37 @@ If you’re interested in this project, have suggestions, or want to collaborate
 
 ## 🛠️ How to Set Up and Run This Project
 
-### 1. Set up a virtual environment:
-```bash
-python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
+1. **Set up a virtual environment:**
+    ```bash
+    python -m venv env
+    source env/bin/activate  # On Windows: env\Scripts\activate
+    ```
 
-## 2. Configure your tasks in tasks.yaml
+2. **Install AgentStack and initialize the project:**
+    ```bash
+    pip install agentstack
+    agentstack init agent_web_scrap
+    ```
 
-# 4. Run the project:
+3. **Install dependencies:**
+    ```bash
+    pip install crewai
+    pip install firecrawl
+    pip install crewai_tools
+    ```
 
-```agentstack run
+4. **Configure your agents and tasks:**
+    ```bash
+    agentstack generate agent summarizar
+    agentstack generate task summarizar_task
+    agentstack tools add firecrawl
+    ```
+
+5. **Run the project:**
+    ```bash
+    agentstack run
+    ```
+
+### Additional Notes:
+- Ensure you configure your tasks in `tasks.yaml` as per your project requirements.
+- Once the project is running, provide a URL for web scraping or crawling, and enjoy the results!
