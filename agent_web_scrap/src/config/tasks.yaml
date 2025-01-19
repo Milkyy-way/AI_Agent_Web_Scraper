@@ -1,0 +1,32 @@
+hello_world:
+  description: >
+    As is tradition in software, let's start by saying 'Hello, World!'. Then, pick
+    one or two tasks that they should try to do next with AgentStack.
+  expected_output: >
+    The sentence Hello, World! followed by two things the user should try to customize
+    their agent further.
+  agent: alex
+
+summarizar_task:
+  description: >-
+    Summarize the content of a webpage using the summarizar agent.
+  expected_output: >-
+    A concise summary of the content scraped from the webpage.
+  agent: summarizar
+
+web_scrape_task:
+  description: >
+    Perform web scraping on the given URL=https://en.wikipedia.org/wiki/Main_Page to extract
+    sections like "From today's featured article", "In the news", and "Today's featured picture" and Do not follow any links on the page.
+  expected_output: >
+    The scraped content of these sections in markdown format (headlines and brief summaries).
+  agent: alex
+
+web_crawl_task:
+  description: >
+    Crawl the given URL=https://en.wikipedia.org/wiki/Main_Page and extract content from
+    sections like "From today's featured article", "In the news", and "Today's featured picture".
+    Do not follow any links on the page.
+  expected_output: >
+    A collection of markdown-formatted content from the specified sections.
+  agent: alex
